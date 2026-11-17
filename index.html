@@ -86,7 +86,7 @@ input:focus,select:focus,button:focus-visible{outline:2px solid var(--teal);outl
 <script>
 const SUPABASE_URL = 'https://artmthtuvnnesrqpfzyf.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFydG10aHR1dm5uZXNycXBmenlmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQ3NDQ1MDgsImV4cCI6MjExMDMyMDUwOH0.gC6x071zT6q_fjni404wTUoY9qCF9GuumNldkjpmkuU';
-const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 const FEEDBACK_URL=""; /* tempel link Google Form di antara tanda kutip */
 const $=s=>document.querySelector(s);
 const ld=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}},sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
