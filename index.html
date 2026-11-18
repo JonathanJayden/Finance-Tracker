@@ -97,7 +97,7 @@ function setMain(code){if(code==curCode())return;if(data.some(d=>(d.cur||curCode
 document.addEventListener('click',e=>{const m=$('#cm');if(m&&!m.hidden&&!e.target.closest('#cm,#cb'))m.hidden=true});
 document.addEventListener('keydown',e=>{const m=$('#cm');if(e.key=='Escape'&&m)m.hidden=true});
 /* ===== Supabase: isi dua nilai ini (Project URL dan publishable key, aman ada di halaman) ===== */
-const SB_URL='', SB_KEY='';
+const SB_URL='https://artmthtuvnnesrqpfzyf.supabase.co', SB_KEY='sb_publishable_n6GHkXnqrOtXc5ti_6WQ-A_FH5OUlP3';
 const SB_OK=!!(SB_URL&&SB_KEY);
 let sess=ld('ft_sess',null);
 async function sbf(path,o={}){
